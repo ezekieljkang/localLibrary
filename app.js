@@ -10,7 +10,7 @@ const catalogRouter = require("./routes/catalog");
 
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-const mongoDB = "mongodb+srv://admin:admin@cluster0.45qkzas.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoDB = process.env.MONGODB_URI;
 
 var app = express();
 
