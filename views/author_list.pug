@@ -4,11 +4,10 @@ block content
   h1= title 
 
   if author_list.length 
-    ul 
+    ul.list-group 
       each author in author_list 
-        li 
+        li.list-group-item
           a(href=author.url) #{author.name}
           | , #{author.lifespan}
-
   else
     p There are no authors.
